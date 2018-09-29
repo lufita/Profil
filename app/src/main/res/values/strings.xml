@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Profil</string>
+    <string name="nim">NIM : A11.2016.09505</string>
+    <string name="nama_duwi_lufita_marfiana">Nama : Duwi Lufita Marfiana</string>
+    <string name="hobi_membaca_makan">Hobi : Membaca, Makan</string>
+    <string name="alamat">alamat</string>
+    <string name="telepon">telepon</string>
+    <string name="e_mail">e-mail</string>
+</resources>
