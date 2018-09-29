@@ -11,73 +11,83 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
 
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/foto" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nim"
-                android:textStyle="bold|normal"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:layout_gravity="center"/>
+                android:textStyle="bold|normal" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nama_duwi_lufita_marfiana"
-                android:textStyle="bold|normal"
                 android:textColor="#000"
                 android:textSize="20sp"
-                android:layout_gravity="center"/>
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:src="@drawable/foto"
-                android:layout_gravity="center"/>
+                android:textStyle="bold|normal" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
                 android:text="@string/hobi_membaca_makan"
                 android:textColor="#000"
-                android:layout_gravity="center"
-                android:textStyle="bold|normal"/>
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="Deskripsi : Mahasiswa semester 5 yang hanya suka coba-coba coding"
+                android:text="@string/deskripsi"
                 android:textColor="#000"
-                android:layout_gravity="center"
-                android:textAlignment="center"
-                android:textStyle="bold|normal"/>
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
 
-            <Button
-                android:id="@+id/satu"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/alamat"
-                android:onClick="alamat"
-                android:layout_gravity="center"/>
-            <Button
-                android:id="@+id/dua"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/telepon"
-                android:onClick="telepon"
-                android:layout_gravity="center"/>
-            <Button
-                android:id="@+id/tiga"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/e_mail"
-                android:onClick="email"
-                android:layout_gravity="center"/>
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
 
+                <Button
+                    android:id="@+id/satu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="alamat"
+                    android:text="@string/alamat" />
+
+                <Button
+                    android:id="@+id/dua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="telepon"
+                    android:text="@string/telepon" />
+
+                <Button
+                    android:id="@+id/tiga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="email"
+                    android:text="@string/e_mail" />
+
+            </LinearLayout>
 
         </LinearLayout>
 

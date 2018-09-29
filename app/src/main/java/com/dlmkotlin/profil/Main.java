@@ -22,9 +22,8 @@ public class Main extends AppCompatActivity {
     }
     public void telepon(View view){
         Intent it = new Intent(Intent.ACTION_DIAL);
-        //it.setData(Uri.parse("tel:"+phone));
+        it.setData(Uri.parse("tel: 087733154411"));
         startActivity(it);
-        //dengan input no tersebut
     }
     public void alamat(View view){
         Uri webpage = (Uri.parse("http://bit.ly/2xHSYaN"));
@@ -33,9 +32,17 @@ public class Main extends AppCompatActivity {
 
     }
     public void email(View view){
-        //Uri webpage = (Uri.parse("http://bit.ly/2xHSYaN"));
         Intent it = new Intent(Intent.ACTION_SEND);
-        startActivity(it);
+        //startActivity(it);
+        it.setType("text/plain");
+        it.putExtra(Intent.EXTRA_EMAIL, new String[]{"lufita.m98@gmail.com"});
+        it.putExtra(Intent.EXTRA_SUBJECT, "Email dari Lufita");
+
+        try {
+            startActivity(Intent.createChooser(it, "Mengirimkan E-mail ?"));
+        } catch (android.content.ActivityNotFoundException ex) {
+
+        }
 
     }
 }
